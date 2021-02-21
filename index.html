@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<div id="embedded-feed"></div>
+yam.connect.embedFeed({
+  "network": "ieseg.fr",
+  "feedType": "group",
+  "feedId": 56893898752,
+  "config": {
+    "use_sso": true,
+    "header": true,
+    "footer": true,
+    "showOpenGraphPreview": false,
+    "defaultToCanonical": false,
+    "hideNetworkName": true,
+    "promptText": "Introduce yourself..",
+    "theme": "light"
+  },
+  "container": "#embedded-feed"
+});
+</body>
+</html>
