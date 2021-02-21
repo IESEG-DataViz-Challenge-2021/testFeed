@@ -18,14 +18,22 @@
 			<div id="embedded-feed" style="height:800px;width:400px; margin:0 auto;">
 				<script type="text/javascript" src="https://s0-azure.assets-yammer.com/assets/platform_embed.js"></script>
 				<script type="text/javascript">
-				yam.connect.embedFeed({
-					container: "#embedded-feed",
-					network: "ieseg.fr",
-					feedType: "group",
-					feedId: "56893898752",
-					promptText: "Introduce yourself.."
-
-				});
+					yam.connect.embedFeed({
+					  "network": "ieseg.fr",
+					  "feedType": "group",
+					  "feedId": 56893898752,
+					  "config": {
+					    "use_sso": true,
+					    "header": true,
+					    "footer": true,
+					    "showOpenGraphPreview": false,
+					    "defaultToCanonical": false,
+					    "hideNetworkName": true,
+					    "promptText": "Introduce yourself..",
+					    "theme": "light"
+					  },
+					  "container": "#embedded-feed"
+					});
 
 				</script>
 			</div>
